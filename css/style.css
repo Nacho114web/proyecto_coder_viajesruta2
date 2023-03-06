@@ -1,0 +1,491 @@
+/* ---------------------RESET DE ESTILOS POR DEFECTO -------------------------------*/
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* ---------------------ESTILOS GLOBALES -------------------------------------------*/
+body {
+   font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+/*estilos para personalizar barra de navegación de Booststrap*/
+header {
+   position: sticky;
+   top: 0px;
+}
+
+#barraNaveg {
+   background-color: black;
+}
+
+.navbar {
+   padding: 0;
+   /*pisar padding de Bootstrap*/
+}
+
+.nav-link {
+   color: white;
+   font-size: 1rem;
+}
+
+.nav-item :hover {
+   background-color: grey;
+   /*efecto hover que no tenía Bootstrap*/
+   color: white;
+   /*pisar efecto hover de Bootstrap para que se vea el texto*/
+}
+
+.nav-item :focus {
+   color: white;
+   /*pisar efecto focus de Boostrap*/
+}
+
+.navbar-toggler {
+   background-color: darkgrey;
+   /* pisar transparent de Bootstrap para que se vea ícono sobre fondo negro*/
+}
+
+/*fin personlización de barra de navegación*/
+
+.logoEmpresa {
+   height: 46px;
+   width: 80px;
+}
+
+.button {
+   border-radius: 20px;
+   color: dimgray;
+   background-color: #f4c83f;
+   padding: 5px;
+   text-decoration: none;
+}
+
+.iconoFijoChat {
+   position: fixed;
+   height: 60px;
+   width: 60px;
+   bottom: 25px;
+   right: 35px;
+}
+
+/*estilos footer*/
+.piePagina {
+   background-color: black;
+   height: 80px;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.piePagina p {
+   align-self: flex-end;
+   color: white;
+   font-size: 0.8rem;
+}
+
+.piePagina ul {
+   color: white;
+}
+
+.redesSociales {
+   flex-grow: 2;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   align-items: center;
+   list-style-type: none;
+}
+
+.redesSociales li {
+   padding: 0px 10px;
+}
+
+.iconRedes {
+   height: 30px;
+   width: 30px;
+}
+
+/*fin estilos footer*/
+
+/* ---------------------ESTILOS PÁGINA INICIO -------------------------------------------*/
+
+.contenedorGridIndex {
+   display: grid;
+   grid-template-areas:
+      "portada"
+      "info";
+   grid-template-columns: 100%;
+   grid-template-rows: auto auto;
+}
+
+/*estilos sección portada*/
+#portada {
+   grid-area: portada;
+   height: 90vh;
+   background-image: url(../images/img_fondo_portada4.jpg);
+   background-size: cover;
+   display: grid;
+   /*ademásd de grid item es padre grid de sus elementos*/
+   grid-template-areas:
+      "marca ."
+      "slogan ."
+      ". ."
+      ". descrip"
+      ". boton";
+   grid-template-rows: 20% 10% auto 20% 10%;
+}
+
+#portada h1 {
+   color: white;
+   font-weight: bold;
+   font-size: 6rem;
+   grid-area: marca;
+}
+
+#portada h2 {
+   color: white;
+   font-weight: bold;
+   font-size: 3rem;
+   grid-area: slogan;
+}
+
+#portada p {
+   color: white;
+   font-size: 1.1rem;
+   text-align: justify;
+   grid-area: descrip;
+   width: 30vw;
+   align-self: center;
+   justify-self: center;
+}
+
+#portada .button {
+   grid-area: boton;
+   align-self: self-start;
+   justify-self: center;
+}
+
+/*estilos sección infoEmpresa*/
+#infoEmpresa {
+   grid-area: info;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.cardInfoEmpresa {
+   display: flex;
+   width: 33vw;
+   background-color: grey;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.cardInfoEmpresa h3 {
+   font-size: 2rem;
+}
+
+.cardInfoEmpresa img {
+   width: 82%;
+   height: 49%
+}
+
+.cardInfoEmpresa p {
+   text-align: justify;
+   margin-top: 10px;
+   padding: 0px 10px;
+}
+
+.cardInfoEmpresa .button {
+   margin-bottom: 5px;
+}
+
+/* ---------------------ESTILOS PÁGINA CONOCENOS -------------------------------------------*/
+
+.contenedorGridConocenos {
+   min-height: 80vh;
+   background-color: rgb(198, 195, 195);
+   display: grid;
+   grid-template-areas:
+      "titulo fotosEmpresa"
+      "laEmpresa fotosEmpresa"
+      "historia fotosEmpresa";
+   row-gap: 1%;
+   column-gap: 1%;
+   grid-template-columns: 50%;
+   grid-template-rows: 11%;
+}
+
+.tituloPaginaConocenos {
+   font-size: 3rem;
+   grid-area: titulo;
+   justify-self: left;
+   align-self: center;
+   margin: 20px;
+}
+
+.laEmpresa {
+   width: 90%;
+   text-align: justify;
+   justify-self: center;
+   align-self: center;
+   grid-area: laEmpresa;
+   margin: 0 20px;
+}
+
+.cardHistoria {
+   grid-area: historia;
+   justify-self: center;
+   align-self: center;
+   width: 90%;
+   padding: 5px;
+   box-shadow: 2px 13px 24px 2px rgba(5, 0, 0, 0.76);
+   -webkit-box-shadow: 2px 13px 24px 2px rgba(5, 0, 0, 0.76);
+   -moz-box-shadow: 2px 13px 24px 2px rgba(5, 0, 0, 0.76);
+   background-color: rgb(198, 195, 180);
+   border-radius: 20px;
+   font-size: 0.9rem;
+   margin: 20px;
+}
+
+#fotosEmpresa {
+   grid-area: fotosEmpresa;
+   display: grid;
+   grid-template-areas:
+      "foto1 foto2 "
+      "foto3 foto4";
+   align-items: center;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 50% 50%;
+}
+
+.fotoUno {
+   grid-area: foto1;
+}
+
+.fotoDos {
+   grid-area: foto2;
+}
+
+.fotoTres {
+   grid-area: foto3;
+}
+
+.fotoCuatro {
+   grid-area: foto4;
+}
+
+#fotosEmpresa img {
+   width: 100%;
+   height: 85%;
+   border-radius: 20px;
+}
+
+/*-------------------------ESTILOS PÁGINA CONTACTO--(para primer pre entrega, modificar)-------------------------------------*/
+#formulario {
+   background-color: darkgray;
+}
+
+#formulario p {
+   font-size: 1rem;
+   font-weight: bold;
+}
+
+#datosContacto div {
+   margin: 10px;
+}
+
+/*-------------------------ESTILOS PÁGINA SERVICIOS-------------------------------------*/
+.bodyPaginaServicios{
+   background-color: rgb(198, 195, 195);
+}
+ 
+   /*estilos para personalizar contenido de grilla Bootstrap*/
+.nombreEmpresa h1{
+   color: white;
+   font-weight: bold;
+   font-size: 4rem;
+}
+.tituloServicios h2{
+   font-size: 3rem;
+   padding-top: 10px;
+}
+.cardServicios{
+   box-shadow: 2px 13px 24px 2px rgba(5, 0, 0, 0.76);
+   -webkit-box-shadow: 2px 13px 24px 2px rgba(5, 0, 0, 0.76);
+   -moz-box-shadow: 2px 13px 24px 2px rgba(5, 0, 0, 0.76);
+   background-color: rgb(198, 195, 180);
+   border-radius: 20px;
+   padding-bottom: 10px;
+      
+}
+.cardServicios h3{
+   text-decoration: underline;
+   padding-top: 5px;
+}
+.cardServicios p{
+   text-align: justify;
+}
+.cardServicios a{
+   padding-bottom: 5px;
+}
+
+
+/*------------------------------MEDIA QUERIES-------------------------------------------*/
+
+/*Mobile (768px para que coincida con md de Bootstrap */
+@media screen and (max-width:768px) {
+
+   /*----- Globales-----*/
+   .logoEmpresa {
+      height: 28px;
+      width: 50px;
+   }
+
+   .piePagina {
+      height: 90px;
+      flex-flow: column nowrap;
+   }
+
+   .piePagina p {
+      align-self: flex-end;
+      color: white;
+      font-size: 0.8rem;
+   }
+
+   .piePagina ul {
+      color: white;
+   }
+
+   .piePagina p {
+      order: 3;
+      font-size: 0.6rem;
+   }
+
+   .piePagina .logoEmpresa {
+      order: 1;
+   }
+
+   .redesSociales {
+      order: 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+   }
+
+   .redesSociales li {
+      padding: 0px 10px;
+   }
+
+   .iconRedes {
+      height: 20px;
+      width: 20px;
+   }
+
+   .iconoFijoChat {
+      bottom: 59px;
+   }
+
+   /*Pàgina Inicio*/
+   #portada {
+      height: 45vh;
+      display: grid;
+      grid-template-areas:
+         "marca"
+         "slogan"
+         "."
+         "descrip"
+         "boton";
+      grid-template-rows: 12% 10% auto 20% 10%;
+   }
+
+   #portada h1 {
+      font-size: 4rem;
+      text-align: center;
+   }
+
+   #portada h2 {
+      font-size: 2.5rem;
+      text-align: center;
+   }
+
+   #portada p {
+      width: 95vw;
+      align-self: center;
+      justify-self: center;
+   }
+
+   #portada .button {
+      grid-area: boton;
+      align-self: self-start;
+      justify-self: center;
+   }
+
+   #infoEmpresa {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .cardInfoEmpresa {
+      width: 100vw;
+      padding: 13px 0px;
+   }
+
+   .cardInfoEmpresa h3 {
+      font-size: 1rem;
+      padding: 5px 0;
+   }
+
+   .cardInfoEmpresa img {
+      width: 65%;
+      height: 49%
+   }
+
+   .cardInfoEmpresa p {
+      width: 90%;
+   }
+}
+
+/* página conocenos */
+@media screen and (max-width:768px) {
+   .contenedorGridConocenos {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5px;
+   }
+
+   .tituloPaginaConocenos {
+      font-size: 1.5rem;
+      justify-self: center;
+      margin: 0;
+   }
+
+   .laEmpresa {
+      width: 90%;
+      margin: 5px;
+   }
+
+   .cardHistoria {
+      width: 90%;
+      font-size: 0.7rem;
+      margin: 10px;
+   }
+
+   #fotosEmpresa {
+      grid-area: fotosEmpresa;
+      display: grid;
+      grid-template-areas:
+         "foto1 foto2"
+         "foto3 foto4";
+      justify-content: center;
+   }
+
+}

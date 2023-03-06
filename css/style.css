@@ -339,8 +339,8 @@ header {
 
 /*------------------------------MEDIA QUERIES-------------------------------------------*/
 
-/*Mobile (768px para que coincida con md de Bootstrap */
-@media screen and (max-width:768px) {
+/*Mobile (576px para que coincida con md de Bootstrap */
+@media screen and (max-width:576px) {
 
    /*----- Globales-----*/
    .logoEmpresa {
@@ -408,12 +408,12 @@ header {
    }
 
    #portada h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       text-align: center;
    }
 
    #portada h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-align: center;
    }
 
@@ -455,7 +455,7 @@ header {
 }
 
 /* página conocenos */
-@media screen and (max-width:768px) {
+@media screen and (max-width:576px) {
    .contenedorGridConocenos {
       display: flex;
       flex-direction: column;

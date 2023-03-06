@@ -396,7 +396,7 @@ header {
 
    /*Pàgina Inicio*/
    #portada {
-      height: 45vh;
+      height: 50vh;
       display: grid;
       grid-template-areas:
          "marca"
@@ -404,7 +404,7 @@ header {
          "."
          "descrip"
          "boton";
-      grid-template-rows: 12% 10% auto 20% 10%;
+      grid-template-rows: 15% 12% auto 20% 10%;
    }
 
    #portada h1 {
@@ -413,7 +413,7 @@ header {
    }
 
    #portada h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center;
    }
 
@@ -421,6 +421,7 @@ header {
       width: 95vw;
       align-self: center;
       justify-self: center;
+      font-size: 1rem;
    }
 
    #portada .button {
@@ -475,7 +476,7 @@ header {
 
    .cardHistoria {
       width: 90%;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin: 10px;
    }
 
@@ -488,4 +489,13 @@ header {
       justify-content: center;
    }
 
+}
+/* página Servicios */
+@media screen and (max-width:576px) {
+   .nombreEmpresa h1{
+      font-size: 2rem;
+   }
+   .tituloServicios h2{
+      font-size: 1.8rem;
+   }
 }

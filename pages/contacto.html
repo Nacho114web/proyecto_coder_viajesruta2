@@ -40,13 +40,13 @@
               <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conocenos</a>
+              <a class="nav-link" href="../pages/conocenos.html">Conocenos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              <a class="nav-link" href="#">Contacto</a>
             <li class="nav-item">
               <a class="nav-link" href="../pages/turismo.html">Turismo</a>
             </li>
@@ -56,53 +56,67 @@
     </nav>
   </header>
 
-  <main>
-    <section id="datosContacto">
-      <div>
-        <h2>VIAJES RUTA 2</h2>
-        <h3>Teléfono: 76767676767</h3>
-        <h3>Wathsapp: 76767676888</h3>
-        <h3>E-mail: info@viajesruta2.com.ar</h3>
-      </div>
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4139.70060631469!2d-57.882671113673815!3d-36.86293333667342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959a3b3e33f16c1f%3A0x9f1079e54082c256!2sMaipu%20buenos%20aires!5e0!3m2!1ses-419!2sar!4v1675622073573!5m2!1ses-419!2sar"
-          width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
+  <main class="contenedorGridContacto"> <!--contenedor grid -->
+    
+    <section class="nombreEmpresa">
+      <h1>VIAJES RUTA 2</h1>
+    </section>
+    
+    <section class="datosContactoEmpresa">
+      <h3><ins>Teléfono</ins>: 2268 476767</h3>
+      <h3><ins>Celular</ins>: 2268 717171</h3>
+      <h3><ins>E-mail</ins>: info@viajesruta2.com.ar</h3>
+    </section>
+    
+    <section class="ubicacion">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4139.70060631469!2d-57.882671113673815!3d-36.86293333667342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959a3b3e33f16c1f%3A0x9f1079e54082c256!2sMaipu%20buenos%20aires!5e0!3m2!1ses-419!2sar!4v1675622073573!5m2!1ses-419!2sar"
+        width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-    <section id="formulario">
-      <p>También podés completar este formulario y en breve te responderemos</p>
+    <section class="parrafoForm">
+      <p>Para conocer tarifas, horarios, o cualquier otra consulta, enviá el formulario y te responderemos</p>
+    </section>
 
-      <form action="">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre">
-
-        <label for="telefono">Teléfono de contacto</label>
-        <input type="tel" id="telefono" required>
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email">
-
-        <label for="motivoconsulta">Tipo de Consulta</label>
-        <select name="motivo" id="motivoconsulta">
-          <option value="inf">Solicitar información</option>
-          <option value="con">Reclamos</option>
-          <option value="pre">Presupuesto</option>
-          <option value="otr">Otro</option>
-        </select>
-
-        <label for="comentario">Escribí tu comentario</label>
-        <textarea id="comentario" cols="30" rows="10"></textarea>
-
-        <label for="recibir">¿Quisieras recibir en tu e-mail novedades y promociones?</label>
-        <input type="checkbox" name="qui" id="recibir">
-
-        <input class="button" type="reset" value="Borrar Datos">
-        <input class="button" type="submit" value="Enviar Formulario">
-
+    <section class="form">
+      <form class="padreGrid" action="">
+        <div class="formNombre">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre">
+        </div>
+        <div class="formTelef">
+          <label for="telefono">Teléfono de contacto</label>
+          <input type="tel" id="telefono">
+        </div>
+        <div class="formMail">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="formMotivo">
+          <label for="motivoconsulta">Tipo de Consulta</label>
+          <select name="motivo" id="motivoconsulta">
+            <option value="inf">Solicitar información</option>
+            <option value="con">Reclamos</option>
+            <option value="pre">Presupuesto</option>
+            <option value="hor">Horarios</option>
+            <option value="otr">Otro</option>
+          </select>
+        </div>
+        <div class="formComent">
+          <label for="comentario">Escribí aquí tu consulta</label>
+          <textarea id="comentario" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="formPie">
+          <label for="recibir">¿Quisieras recibir en tu e-mail novedades y promociones?</label>
+          <input type="checkbox" name="qui" id="recibir">
+        </div>
+        <div class="formBorrar">
+          <input class="button" type="reset" value="Borrar Datos">
+        </div>
+        <div class="formEnviar">
+          <input class="button" type="submit" value="Enviar Formulario">
+        </div>
       </form>
     </section>
 

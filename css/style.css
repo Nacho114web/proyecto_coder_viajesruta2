@@ -287,18 +287,96 @@ header {
    border-radius: 20px;
 }
 
-/*-------------------------ESTILOS PÁGINA CONTACTO--(para primer pre entrega, modificar)-------------------------------------*/
-#formulario {
-   background-color: darkgray;
+/*-------------------------ESTILOS PÁGINA CONTACTO-------------------*/
+
+.contenedorGridContacto {    /*Grid para posicionar los elementos de la página*/
+   background-color: rgb(198, 195, 195);
+   display: grid;
+   grid-template-areas:
+   "nombreEmp mapa"
+   "datosContacto mapa"
+   "tituloForm tituloForm"
+   "formulario formulario";
+   justify-items: center;
+   row-gap: 19px;  
 }
 
-#formulario p {
-   font-size: 1rem;
-   font-weight: bold;
+.nombreEmpresa{   
+   grid-area: nombreEmp;     
 }
 
-#datosContacto div {
-   margin: 10px;
+.datosContactoEmpresa{
+   grid-area: datosContacto; 
+   font-size: 1.6rem; 
+}
+
+.ubicacion{   
+   grid-area:mapa;
+   align-self: center;
+}
+
+.parrafoForm{   
+   grid-area: tituloForm;
+   font-size: 1.5rem;
+}
+
+.form{
+   width: 80vw;
+   grid-area: formulario;
+   display: flex;
+   flex-direction: column;
+}
+
+.padreGrid{ /*Grid para posicionar elementos del formulario*/
+   width: 70vw;
+   display: grid;
+   grid-template-areas: 
+   "nombre coment"
+   "telef coment"
+   "mail coment"
+   "motivo coment"
+   "pieform pieform"
+   "borrar enviar";
+   justify-items: end;
+   row-gap: 10px;
+}
+
+.formNombre{
+   grid-area: nombre;
+}
+
+.formTelef{
+   grid-area: telef;
+}
+
+.formMail{
+   grid-area: mail;
+}
+
+.formMotivo{
+   grid-area: motivo;
+}
+
+.formComent{
+   grid-area: coment;
+}
+
+.formComent label{
+   display:block;
+}
+
+.formPie{
+   grid-area: pieform;
+   justify-self: center;
+}
+
+.formBorrar{
+   grid-area: borrar;
+   justify-self: center;
+}
+.formEnviar{
+   grid-area: enviar;
+   justify-self: center;
 }
 
 /*-------------------------ESTILOS PÁGINA SERVICIOS-------------------------------------*/

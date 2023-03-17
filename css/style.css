@@ -623,4 +623,7 @@ header {
    #comentario {
       width: 80dvw;
    }
+   .ubicacion iframe{
+      width: 80vw;
+   }
 }

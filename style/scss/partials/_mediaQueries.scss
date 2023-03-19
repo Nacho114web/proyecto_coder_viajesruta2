@@ -1,0 +1,214 @@
+/*------------------------------MEDIA QUERIES-------------------------------------------*/
+
+/*Mobile (576px para que coincida con md de Bootstrap */
+@media screen and (max-width:$breakpointMobile) {
+
+    /*----- Globales-----*/
+    .logoEmpresa {
+        height: 28px;
+        width: 50px;
+    }
+
+    .piePagina {
+        height: 90px;
+        flex-flow: column nowrap;
+
+        p {
+            align-self: flex-end;
+            color: white;
+            font-size: 0.6rem;
+            order:3;
+        }
+
+        ul {
+            color: white;
+        }
+
+        
+        .logoEmpresa {
+            order: 1;
+        }
+    }
+
+    .redesSociales {
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+
+        li {
+            padding: 0px 10px;
+        }
+    }
+
+    .iconRedes {
+        height: 20px;
+        width: 20px;
+    }
+
+    .iconoFijoChat {
+        bottom: 59px;
+    }
+
+    /*Pàgina Inicio*/
+    #portada {
+        height: 50vh;
+        display: grid;
+        grid-template-areas:
+            "marca"
+            "slogan"
+            "."
+            "descrip"
+            "boton";
+        grid-template-rows: 15% 12% auto 20% 10%;
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        p {
+            width: 95vw;
+            align-self: center;
+            justify-self: center;
+            font-size: 1rem;
+        }
+
+        .button {
+            align-self: self-start;
+            justify-self: center;
+        }
+    }
+
+    #infoEmpresa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardInfoEmpresa {
+        width: 100vw;
+        padding: 13px 0px;
+
+
+        h3 {
+            font-size: 1rem;
+            padding: 5px 0;
+        }
+
+        img {
+            width: 65%;
+            height: 49%
+        }
+
+        p {
+            width: 90%;
+        }
+    }
+}
+
+    /* página conocenos */
+    @media screen and (max-width:$breakpointMobile) {
+        .contenedorGridConocenos {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5px;
+        }
+
+        .tituloPaginaConocenos {
+            font-size: 1.5rem;
+            justify-self: center;
+            margin: 0;
+        }
+
+        .laEmpresa {
+            width: 90%;
+            margin: 5px;
+        }
+
+        .cardHistoria {
+            width: 90%;
+            font-size: 0.8rem;
+            margin: 10px;
+        }
+
+        #fotosEmpresa {
+            grid-area: fotosEmpresa;
+            display: grid;
+            grid-template-areas:
+                "foto1 foto2"
+                "foto3 foto4";
+            justify-content: center;
+        }
+
+    }
+
+    /* página Servicios */
+    @media screen and (max-width:$breakpointMobile) {
+        .nombreEmpresa {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .tituloServicios {
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* página Contacto */
+        @media screen and (max-width:576px) {
+            .contenedorGridContacto {
+                grid-template-areas:
+                    "nombreEmp"
+                    "datosContacto"
+                    "mapa"
+                    "tituloForm "
+                    "formulario ";
+                row-gap: 5px;
+            }
+
+            .nombreEmpresaContacto {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+
+            .datosContactoEmpresa {
+                font-size: 1.2rem;
+            }
+
+            .parrafoForm p {
+                font-size: 1.2rem;
+            }
+
+            .padreGrid {
+                /*Grid para posicionar elementos del formulario*/
+                width: 80vw;
+                grid-template-areas:
+                    "nombre"
+                    "telef "
+                    "mail "
+                    "motivo "
+                    "pieform "
+                    "coment"
+                    "borrar"
+                    "enviar";               
+                }
+
+            #comentario {
+                width: 80vw;
+            }
+
+            .ubicacion iframe {
+                width: 80vw;
+            }
+        }
+    }

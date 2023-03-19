@@ -1,0 +1,92 @@
+/* ---------------------ESTILOS PÁGINA INICIO -------------------------------------------*/
+
+.contenedorGridIndex {
+    display: grid;
+    grid-template-areas:
+       "portada"
+       "info";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+ }
+ 
+ #portada {
+    grid-area: portada;
+    height: 90vh;
+    background-image: url(../../images/img_fondo_portada4.jpg);
+    background-size: cover;
+    display: grid;
+    /*ademásd de grid item es padre grid de sus elementos*/
+    grid-template-areas:
+       "marca ."
+       "slogan ."
+       ". ."
+       ". descrip"
+       ". boton";
+    grid-template-rows: 20% 10% auto 20% 10%;
+
+    h1 {
+        color: white;
+        font-weight: bold;
+        font-size: 6rem;
+        grid-area: marca;
+     }
+
+     h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        grid-area: slogan;
+     }
+
+     p {
+        color: white;
+        font-size: 1.1rem;
+        text-align: justify;
+        grid-area: descrip;
+        width: 30vw;
+        align-self: center;
+        justify-self: center;
+     }
+     .button {
+        grid-area: boton;
+        align-self: self-start;
+        justify-self: center;
+     }
+ }
+ 
+ #infoEmpresa {
+    grid-area: info;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ 
+ .cardInfoEmpresa {
+    display: flex;
+    width: 33vw;
+    background-color: map-get($colores, colorFondoCards);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h3 {
+        font-size: 2rem;
+     }
+
+     img {
+        width: 82%;
+        height: 49%;
+        object-fit: cover;
+     }
+
+     p {
+        text-align: justify;
+        margin-top: 10px;
+        padding: 0px 10px;
+     }
+
+     .button {
+        margin-bottom: 5px;
+     }
+ }  

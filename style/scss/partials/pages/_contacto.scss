@@ -1,7 +1,6 @@
 /*-------------------------ESTILOS PÁGINA CONTACTO-------------------*/
 
 .contenedorGridContacto {
-    /*Grid para posicionar los elementos de la página*/
     background-color: map-get($colores, colorFondoPrincipal);
     display: grid;
     grid-template-areas:
@@ -40,13 +39,10 @@
  
  .form {
     width: 80vw;
-    grid-area: formulario;
-    display: flex;
-    flex-direction: column;
+    grid-area: formulario;    
  }
  
- .padreGrid {
-    /*Grid para posicionar elementos del formulario*/
+ .contenedorGridForm {
     width: 70vw;
     display: grid;
     grid-template-areas:

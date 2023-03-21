@@ -188,10 +188,12 @@
             .parrafoForm p {
                 font-size: 1.2rem;
             }
+            label {
+                font-size: 0.8rem;
+            }
 
-            .padreGrid {
-                /*Grid para posicionar elementos del formulario*/
-                width: 90vw;
+            .contenedorGridForm {
+                width: 80vw;
                 grid-template-areas:
                     "nombre"
                     "telef "
@@ -200,8 +202,9 @@
                     "pieform "
                     "coment"
                     "borrar"
-                    "enviar";               
+                    "enviar";                           
                 }
+                
 
             #comentario {
                 width: 80vw;

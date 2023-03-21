@@ -175,7 +175,6 @@ header {
   object-fit: cover;
 }
 .cardInfoEmpresa p {
-  text-align: justify;
   margin-top: 10px;
   padding: 0px 10px;
 }
@@ -368,11 +367,38 @@ header {
   text-decoration: underline;
   padding-top: 5px;
 }
-.cardServicios p {
-  text-align: justify;
+
+/*-------------------------ESTILOS PÁGINA TURISMO-------------------------------------*/
+main {
+  padding-bottom: 20px;
+  background-color: rgb(198, 195, 195);
 }
-.cardServicios a {
-  padding-bottom: 5px;
+
+/*estilos para personalizar contenido de grilla Bootstrap*/
+.nombreEmpresaTurismo h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.tituloTurismo h2 {
+  font-size: 3rem;
+  padding-top: 10px;
+}
+
+.imagenTurismo img {
+  width: 98%;
+  height: 98%;
+  object-fit: cover;
+}
+
+.cardTurismo {
+  border-style: dashed;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.cardTurismo h3 {
+  padding-top: 5px;
 }
 
 /*------------------------------MEDIA QUERIES-------------------------------------------*/
@@ -498,9 +524,9 @@ header {
   .tituloServicios h2 {
     font-size: 1.8rem;
   }
-  /* página Contacto */
 }
-@media screen and (max-width: 576px) and (max-width: 576px) {
+/* página Contacto */
+@media screen and (max-width: 576px) {
   .contenedorGridContacto {
     grid-template-areas: "nombreEmp" "datosContacto" "mapa" "tituloForm " "formulario ";
     row-gap: 5px;
@@ -526,6 +552,15 @@ header {
   }
   .ubicacion iframe {
     width: 80vw;
+  }
+}
+/* página Turismo */
+@media screen and (max-width: 576px) {
+  .nombreEmpresaTurismo h1 {
+    font-size: 2rem;
+  }
+  .tituloTurismo h2 {
+    font-size: 1.8rem;
   }
 }
 

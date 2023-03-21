@@ -17,14 +17,14 @@
             align-self: flex-end;
             color: white;
             font-size: 0.6rem;
-            order:3;
+            order: 3;
         }
 
         ul {
             color: white;
         }
 
-        
+
         .logoEmpresa {
             order: 1;
         }
@@ -113,105 +113,122 @@
     }
 }
 
-    /* página conocenos */
-    @media screen and (max-width:$breakpointMobile) {
-        .contenedorGridConocenos {
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 5px;
-        }
-
-        .tituloPaginaConocenos {
-            font-size: 1.5rem;
-            justify-self: center;
-            margin: 0;
-        }
-
-        .laEmpresa {
-            width: 90%;
-            margin: 5px;
-        }
-
-        .cardHistoria {
-            width: 90%;
-            font-size: 0.8rem;
-            margin: 10px;
-        }
-
-        #fotosEmpresa {
-            grid-area: fotosEmpresa;
-            display: grid;
-            grid-template-areas:
-                "foto1 foto2"
-                "foto3 foto4";
-            justify-content: center;
-        }
-
+/* página conocenos */
+@media screen and (max-width:$breakpointMobile) {
+    .contenedorGridConocenos {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
     }
 
-    /* página Servicios */
-    @media screen and (max-width:$breakpointMobile) {
-        .nombreEmpresa {
-            h1 {
-                font-size: 2rem;
-            }
-        }
+    .tituloPaginaConocenos {
+        font-size: 1.5rem;
+        justify-self: center;
+        margin: 0;
+    }
 
-        .tituloServicios {
-            h2 {
-                font-size: 1.8rem;
-            }
-        }
+    .laEmpresa {
+        width: 90%;
+        margin: 5px;
+    }
 
-        /* página Contacto */
-        @media screen and (max-width:576px) {
-            .contenedorGridContacto {
-                grid-template-areas:
-                    "nombreEmp"
-                    "datosContacto"
-                    "mapa"
-                    "tituloForm "
-                    "formulario ";
-                row-gap: 5px;
-            }
+    .cardHistoria {
+        width: 90%;
+        font-size: 0.8rem;
+        margin: 10px;
+    }
 
-            .nombreEmpresaContacto {
-                h1 {
-                    font-size: 2rem;
-                }
-            }
+    #fotosEmpresa {
+        grid-area: fotosEmpresa;
+        display: grid;
+        grid-template-areas:
+            "foto1 foto2"
+            "foto3 foto4";
+        justify-content: center;
+    }
 
-            .datosContactoEmpresa {
-                font-size: 1.2rem;
-            }
+}
 
-            .parrafoForm p {
-                font-size: 1.2rem;
-            }
-            label {
-                font-size: 0.8rem;
-            }
-
-            .contenedorGridForm {
-                width: 80vw;
-                grid-template-areas:
-                    "nombre"
-                    "telef "
-                    "mail "
-                    "motivo "
-                    "pieform "
-                    "coment"
-                    "borrar"
-                    "enviar";                           
-                }
-                
-
-            #comentario {
-                width: 80vw;
-            }
-
-            .ubicacion iframe {
-                width: 80vw;
-            }
+/* página Servicios */
+@media screen and (max-width:$breakpointMobile) {
+    .nombreEmpresa {
+        h1 {
+            font-size: 2rem;
         }
     }
+
+    .tituloServicios {
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+/* página Contacto */
+@media screen and (max-width:576px) {
+    .contenedorGridContacto {
+        grid-template-areas:
+            "nombreEmp"
+            "datosContacto"
+            "mapa"
+            "tituloForm "
+            "formulario ";
+        row-gap: 5px;
+    }
+
+    .nombreEmpresaContacto {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .datosContactoEmpresa {
+        font-size: 1.2rem;
+    }
+
+    .parrafoForm p {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .contenedorGridForm {
+        width: 80vw;
+        grid-template-areas:
+            "nombre"
+            "telef "
+            "mail "
+            "motivo "
+            "pieform "
+            "coment"
+            "borrar"
+            "enviar";
+    }
+
+
+    #comentario {
+        width: 80vw;
+    }
+
+    .ubicacion iframe {
+        width: 80vw;
+    }
+}
+
+/* página Turismo */
+@media screen and (max-width:$breakpointMobile) {
+    .nombreEmpresaTurismo {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .tituloTurismo {
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+
+}

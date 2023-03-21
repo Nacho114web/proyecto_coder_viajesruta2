@@ -1,6 +1,6 @@
 /*-------------------------ESTILOS PÁGINA SERVICIOS-------------------------------------*/
 .bodyPaginaServicios {
-    background-color: map-get($colores, colorFondoPrincipal);
+   background-color: map-get($colores, colorFondoPrincipal);
  }
  
  /*estilos para personalizar contenido de grilla Bootstrap*/
@@ -28,13 +28,7 @@
         text-decoration: underline;
         padding-top: 5px;
      }
-
-     p {
-        text-align: justify;
-     }
-
-     a {
-        padding-bottom: 5px;
-     }
- 
- }
+     
+     
+   
+   }

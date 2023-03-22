@@ -22,9 +22,8 @@
       ". boton";
    grid-template-rows: 20% 10% auto 20% 10%;
 
-   h1 {
-      color: white;
-      font-weight: bold;
+   .marcaInicio {
+      @extend %marca;
       font-size: 6rem;
       grid-area: marca;
    }

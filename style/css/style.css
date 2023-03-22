@@ -11,6 +11,12 @@ body {
   font-family: "Merriweather Sans", sans-serif;
 }
 
+/*--------UTILIZACIÓN DE @EXTEND--------*/
+.nombreEmpresaTurismo .marcaTurismo, .nombreEmpresa .marcaServicios, .nombreEmpresaContacto .marcaContacto, #portada .marcaInicio {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
 /* ---------------------ESTILOS PERSONALIZAR NAVBAR BOOTSTRAP---------------*/
 header {
   position: sticky;
@@ -122,9 +128,7 @@ header {
   grid-template-areas: "marca ." "slogan ." ". ." ". descrip" ". boton";
   grid-template-rows: 20% 10% auto 20% 10%;
 }
-#portada h1 {
-  color: white;
-  font-weight: bold;
+#portada .marcaInicio {
   font-size: 6rem;
   grid-area: marca;
 }
@@ -266,9 +270,7 @@ header {
 .nombreEmpresaContacto {
   grid-area: nombreEmp;
 }
-.nombreEmpresaContacto h1 {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+.nombreEmpresaContacto .marcaContacto {
   font-size: 4rem;
 }
 
@@ -345,9 +347,7 @@ header {
 }
 
 /*estilos para personalizar contenido de grilla Bootstrap*/
-.nombreEmpresa h1 {
-  color: white;
-  font-weight: bold;
+.nombreEmpresa .marcaServicios {
   font-size: 4rem;
 }
 
@@ -374,9 +374,7 @@ header {
 }
 
 /*estilos para personalizar contenido de grilla Bootstrap*/
-.nombreEmpresaTurismo h1 {
-  color: white;
-  font-weight: bold;
+.nombreEmpresaTurismo .marcaTurismo {
   font-size: 4rem;
 }
 

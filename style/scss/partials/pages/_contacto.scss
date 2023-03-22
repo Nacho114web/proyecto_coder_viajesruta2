@@ -14,9 +14,8 @@
 .nombreEmpresaContacto {
    grid-area: nombreEmp;
 
-   h1 {
-      color: map-get($colores, colorNombreEmpresa);
-      font-weight: bold;
+   .marcaContacto {
+      @extend %marca;
       font-size: 4rem;
    }
 }

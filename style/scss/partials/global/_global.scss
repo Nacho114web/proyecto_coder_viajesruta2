@@ -9,6 +9,12 @@
 body {
    font-family: 'Merriweather Sans', sans-serif;
 }
+/*--------UTILIZACIÓN DE @EXTEND--------*/
+%marca {
+   color:map-get($colores,colorNombreEmpresa );
+   font-weight: bold;
+}
+
 
 /* ---------------------ESTILOS PERSONALIZAR NAVBAR BOOTSTRAP---------------*/
 header {

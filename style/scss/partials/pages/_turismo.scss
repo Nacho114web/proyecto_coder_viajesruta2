@@ -7,10 +7,9 @@
 /*estilos para personalizar contenido de grilla Bootstrap*/
 .nombreEmpresaTurismo {
 
-   h1 {
-      color: white;
-      font-weight: bold;
-      font-size: 4rem;
+   .marcaTurismo {
+   @extend %marca;
+   font-size: 4rem;
    }
 }
 

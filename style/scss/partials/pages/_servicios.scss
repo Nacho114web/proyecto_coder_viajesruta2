@@ -5,9 +5,8 @@
 
 /*estilos para personalizar contenido de grilla Bootstrap*/
 .nombreEmpresa {
-   h1 {
-      color: white;
-      font-weight: bold;
+   .marcaServicios {
+      @extend %marca;
       font-size: 4rem;
    }
 }

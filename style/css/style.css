@@ -106,7 +106,7 @@ header {
 }
 
 /* ---------------------ESTILOS PÁGINA INICIO -------------------------------------------*/
-.contenedorGridIndex {
+.mainPageInicio {
   display: grid;
   grid-template-areas: "portada" "info";
   grid-template-columns: 100%;
@@ -119,7 +119,6 @@ header {
   background-image: url(../../images/img_fondo_portada4.jpg);
   background-size: cover;
   display: grid;
-  /*ademásd de grid item es padre grid de sus elementos*/
   grid-template-areas: "marca ." "slogan ." ". ." ". descrip" ". boton";
   grid-template-rows: 20% 10% auto 20% 10%;
 }
@@ -183,7 +182,7 @@ header {
 }
 
 /* ---------------------ESTILOS PÁGINA CONOCENOS -------------------------------------------*/
-.contenedorGridConocenos {
+.mainPageConocenos {
   min-height: 80vh;
   background-color: rgb(198, 195, 195);
   display: grid;
@@ -255,8 +254,8 @@ header {
   grid-area: foto4;
 }
 
-/*-------------------------ESTILOS PÁGINA CONTACTO-------------------*/
-.contenedorGridContacto {
+/* ---------------------ESTILOS PÁGINA CONTACTO -------------------------------------------*/
+.mainPageContacto {
   background-color: rgb(198, 195, 195);
   display: grid;
   grid-template-areas: "nombreEmp mapa" "datosContacto mapa" "tituloForm tituloForm" "formulario formulario";
@@ -340,8 +339,8 @@ header {
   justify-self: center;
 }
 
-/*-------------------------ESTILOS PÁGINA SERVICIOS-------------------------------------*/
-.bodyPaginaServicios {
+/* ---------------------ESTILOS PÁGINA SERVICIOS -------------------------------------------*/
+.mainPageServicios {
   background-color: rgb(198, 195, 195);
 }
 
@@ -368,8 +367,8 @@ header {
   padding-top: 5px;
 }
 
-/*-------------------------ESTILOS PÁGINA TURISMO-------------------------------------*/
-main {
+/* ---------------------ESTILOS PÁGINA TURISMO -------------------------------------------*/
+.mainPageTurismo {
   padding-bottom: 20px;
   background-color: rgb(198, 195, 195);
 }

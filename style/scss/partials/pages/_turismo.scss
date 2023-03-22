@@ -1,46 +1,42 @@
-/*-------------------------ESTILOS PÁGINA TURISMO-------------------------------------*/
-main {
-    padding-bottom:20px;
-    background-color: map-get($colores, colorFondoPrincipal);
- }
- 
- /*estilos para personalizar contenido de grilla Bootstrap*/
- .nombreEmpresaTurismo {
+/* ---------------------ESTILOS PÁGINA TURISMO -------------------------------------------*/
+.mainPageTurismo {
+   padding-bottom: 20px;
+   background-color: map-get($colores, colorFondoPrincipal);
+}
 
-    h1{
-    color: white;
-    font-weight: bold;
-    font-size: 4rem;
-    }
- }
- 
- .tituloTurismo {
+/*estilos para personalizar contenido de grilla Bootstrap*/
+.nombreEmpresaTurismo {
 
-    h2{
-    font-size: 3rem;
-    padding-top: 10px;
-    }
- }
+   h1 {
+      color: white;
+      font-weight: bold;
+      font-size: 4rem;
+   }
+}
 
- .imagenTurismo{
-    img{
-        width: 98%;
-        height: 98%;
-        object-fit: cover;
-    }
- }
+.tituloTurismo {
 
- .cardTurismo{
-    border-style: dashed,;
-    border-radius: 20px;
-    padding-bottom: 10px;
+   h2 {
+      font-size: 3rem;
+      padding-top: 10px;
+   }
+}
 
-    h3{
-        padding-top: 5px;
-    }
+.imagenTurismo {
 
-   
- }
- 
- 
-  
+   img {
+      width: 98%;
+      height: 98%;
+      object-fit: cover;
+   }
+}
+
+.cardTurismo {
+   border-style: dashed, ;
+   border-radius: 20px;
+   padding-bottom: 10px;
+
+   h3 {
+      padding-top: 5px;
+   }
+}

@@ -1,96 +1,95 @@
-/*-------------------------ESTILOS PÁGINA CONTACTO-------------------*/
+/* ---------------------ESTILOS PÁGINA CONTACTO -------------------------------------------*/
+.mainPageContacto {
+   background-color: map-get($colores, colorFondoPrincipal);
+   display: grid;
+   grid-template-areas:
+      "nombreEmp mapa"
+      "datosContacto mapa"
+      "tituloForm tituloForm"
+      "formulario formulario";
+   justify-items: center;
+   row-gap: 19px;
+}
 
-.contenedorGridContacto {
-    background-color: map-get($colores, colorFondoPrincipal);
-    display: grid;
-    grid-template-areas:
-       "nombreEmp mapa"
-       "datosContacto mapa"
-       "tituloForm tituloForm"
-       "formulario formulario";
-    justify-items: center;
-    row-gap: 19px;
- }
- 
- .nombreEmpresaContacto {
-    grid-area: nombreEmp;
+.nombreEmpresaContacto {
+   grid-area: nombreEmp;
 
-    h1{
-        color:map-get($colores, colorNombreEmpresa);
-        font-weight: bold;
-        font-size: 4rem;
-    }
- }
- 
- .datosContactoEmpresa {
-    grid-area: datosContacto;
-    font-size: 1.6rem;
- }
- 
- .ubicacion {
-    grid-area: mapa;
-    align-self: center;
- }
- 
- .parrafoForm {
-    grid-area: tituloForm;
-    font-size: 1.5rem;
- }
- 
- .form {
-    width: 80vw;
-    grid-area: formulario;    
- }
- 
- .contenedorGridForm {
-    width: 70vw;
-    display: grid;
-    grid-template-areas:
-       "nombre coment"
-       "telef coment"
-       "mail coment"
-       "motivo coment"
-       "pieform pieform"
-       "borrar enviar";
-    justify-items: end;
-    row-gap: 10px;
- }
- 
- .formNombre {
-    grid-area: nombre;
- }
- 
- .formTelef {
-    grid-area: telef;
- }
- 
- .formMail {
-    grid-area: mail;
- }
- 
- .formMotivo {
-    grid-area: motivo;
- }
- 
- .formComent {
-    grid-area: coment;
- }
- 
- .formComent label {
-    display: block;
- }
- 
- .formPie {
-    grid-area: pieform;
-    justify-self: center;
- }
- 
- .formBorrar {
-    grid-area: borrar;
-    justify-self: center;
- }
- 
- .formEnviar {
-    grid-area: enviar;
-    justify-self: center;
- }
+   h1 {
+      color: map-get($colores, colorNombreEmpresa);
+      font-weight: bold;
+      font-size: 4rem;
+   }
+}
+
+.datosContactoEmpresa {
+   grid-area: datosContacto;
+   font-size: 1.6rem;
+}
+
+.ubicacion {
+   grid-area: mapa;
+   align-self: center;
+}
+
+.parrafoForm {
+   grid-area: tituloForm;
+   font-size: 1.5rem;
+}
+
+.form {
+   width: 80vw;
+   grid-area: formulario;
+}
+
+.contenedorGridForm {
+   width: 70vw;
+   display: grid;
+   grid-template-areas:
+      "nombre coment"
+      "telef coment"
+      "mail coment"
+      "motivo coment"
+      "pieform pieform"
+      "borrar enviar";
+   justify-items: end;
+   row-gap: 10px;
+}
+
+.formNombre {
+   grid-area: nombre;
+}
+
+.formTelef {
+   grid-area: telef;
+}
+
+.formMail {
+   grid-area: mail;
+}
+
+.formMotivo {
+   grid-area: motivo;
+}
+
+.formComent {
+   grid-area: coment;
+}
+
+.formComent label {
+   display: block;
+}
+
+.formPie {
+   grid-area: pieform;
+   justify-self: center;
+}
+
+.formBorrar {
+   grid-area: borrar;
+   justify-self: center;
+}
+
+.formEnviar {
+   grid-area: enviar;
+   justify-self: center;
+}

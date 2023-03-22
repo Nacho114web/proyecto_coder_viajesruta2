@@ -519,7 +519,7 @@ main {
 /* página Servicios */
 @media screen and (max-width: 576px) {
   .nombreEmpresa h1 {
-    font-size: 2rem;
+    font-size: 2, 2rem;
   }
   .tituloServicios h2 {
     font-size: 1.8rem;
@@ -557,7 +557,7 @@ main {
 /* página Turismo */
 @media screen and (max-width: 576px) {
   .nombreEmpresaTurismo h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .tituloTurismo h2 {
     font-size: 1.8rem;

@@ -27,4 +27,14 @@
       text-decoration: underline;
       padding-top: 5px;
    }
+
+   .button {
+      transition: all 1s;
+
+      &:hover {
+         border-radius: 0px;
+         color:black;
+         background-color:limegreen;
+      }
+   }
 }

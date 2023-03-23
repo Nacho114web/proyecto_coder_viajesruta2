@@ -278,6 +278,10 @@ header {
   grid-area: datosContacto;
   font-size: 1.6rem;
 }
+.datosContactoEmpresa h3:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 
 .ubicacion {
   grid-area: mapa;
@@ -293,6 +297,9 @@ header {
   width: 80vw;
   grid-area: formulario;
 }
+.form label {
+  font-weight: bold;
+}
 
 .contenedorGridForm {
   width: 70vw;
@@ -305,21 +312,63 @@ header {
 .formNombre {
   grid-area: nombre;
 }
+.formNombre input {
+  background-color: lightgrey;
+  transition: all 1s;
+}
+.formNombre input:focus {
+  background-color: whitesmoke;
+}
 
 .formTelef {
   grid-area: telef;
+}
+.formTelef input {
+  background-color: lightgrey;
+  transition: all 1s;
+}
+.formTelef input:focus {
+  background-color: whitesmoke;
 }
 
 .formMail {
   grid-area: mail;
 }
+.formMail input {
+  background-color: lightgrey;
+  transition: all 1s;
+}
+.formMail input:focus {
+  background-color: whitesmoke;
+}
 
 .formMotivo {
   grid-area: motivo;
 }
+.formMotivo option {
+  background-color: lightgrey;
+  transition: all 1s;
+}
+.formMotivo option:focus {
+  background-color: whitesmoke;
+}
+.formMotivo select {
+  background-color: lightgrey;
+  transition: all 1s;
+}
+.formMotivo select:focus {
+  background-color: whitesmoke;
+}
 
 .formComent {
   grid-area: coment;
+}
+.formComent textarea {
+  background-color: lightgrey;
+  transition: all 1s;
+}
+.formComent textarea:focus {
+  background-color: whitesmoke;
 }
 
 .formComent label {
@@ -365,6 +414,14 @@ header {
 .cardServicios h3 {
   text-decoration: underline;
   padding-top: 5px;
+}
+.cardServicios .button {
+  transition: all 1s;
+}
+.cardServicios .button:hover {
+  border-radius: 0px;
+  color: black;
+  background-color: limegreen;
 }
 
 /* ---------------------ESTILOS PÁGINA TURISMO -------------------------------------------*/

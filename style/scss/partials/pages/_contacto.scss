@@ -23,6 +23,11 @@
 .datosContactoEmpresa {
    grid-area: datosContacto;
    font-size: 1.6rem;
+
+   h3:hover {
+      background-color: map-get($colores, colorFondoHeader);
+      color: map-get($colores, colorNombreEmpresa)
+   }
 }
 
 .ubicacion {
@@ -38,6 +43,10 @@
 .form {
    width: 80vw;
    grid-area: formulario;
+
+   label{
+      font-weight: bold;
+   }
 }
 
 .contenedorGridForm {
@@ -56,22 +65,77 @@
 
 .formNombre {
    grid-area: nombre;
+
+   input {
+      background-color: lightgrey;
+      transition: all 1s;
+
+      &:focus {
+         background-color: whitesmoke;
+      }
+   }
 }
 
 .formTelef {
    grid-area: telef;
+
+   input {
+      background-color: lightgrey;
+      transition: all 1s;
+
+      &:focus {
+         background-color: whitesmoke;
+      }
+   }
 }
 
 .formMail {
    grid-area: mail;
+
+   input {
+      background-color: lightgrey;
+      transition: all 1s;
+
+      &:focus {
+         background-color: whitesmoke;
+      }
+   }
 }
 
 .formMotivo {
    grid-area: motivo;
+
+   option {
+      background-color: lightgrey;
+      transition: all 1s;
+
+      &:focus {
+         background-color: whitesmoke;
+      }
+   }
+
+   select {
+      background-color: lightgrey;
+      transition: all 1s;
+
+      &:focus {
+         background-color: whitesmoke;
+      }
+   }
+
 }
 
 .formComent {
    grid-area: coment;
+
+   textarea {
+      background-color: lightgrey;
+      transition: all 1s;
+
+      &:focus {
+         background-color: whitesmoke;
+      }
+   }
 }
 
 .formComent label {

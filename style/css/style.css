@@ -207,7 +207,6 @@ header {
 
 .laEmpresa {
   width: 90%;
-  text-align: justify;
   justify-self: center;
   align-self: center;
   grid-area: laEmpresa;
@@ -504,7 +503,7 @@ header {
     grid-template-areas: "marca" "slogan" "." "descrip" "boton";
     grid-template-rows: 15% 12% auto 20% 10%;
   }
-  #portada h1 {
+  #portada .marcaInicio {
     font-size: 3rem;
     text-align: center;
   }
@@ -544,13 +543,13 @@ header {
 }
 /* página conocenos */
 @media screen and (max-width: 576px) {
-  .contenedorGridConocenos {
+  .mainPageConocenos {
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
   }
   .tituloPaginaConocenos {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     justify-self: center;
     margin: 0;
   }
@@ -572,8 +571,8 @@ header {
 }
 /* página Servicios */
 @media screen and (max-width: 576px) {
-  .nombreEmpresa h1 {
-    font-size: 2, 2rem;
+  .nombreEmpresa .marcaServicios {
+    font-size: 2rem;
   }
   .tituloServicios h2 {
     font-size: 1.8rem;
@@ -581,11 +580,11 @@ header {
 }
 /* página Contacto */
 @media screen and (max-width: 576px) {
-  .contenedorGridContacto {
+  .mainPageContacto {
     grid-template-areas: "nombreEmp" "datosContacto" "mapa" "tituloForm " "formulario ";
     row-gap: 5px;
   }
-  .nombreEmpresaContacto h1 {
+  .nombreEmpresaContacto .marcaContacto {
     font-size: 2rem;
   }
   .datosContactoEmpresa {
@@ -610,8 +609,8 @@ header {
 }
 /* página Turismo */
 @media screen and (max-width: 576px) {
-  .nombreEmpresaTurismo h1 {
-    font-size: 2.2rem;
+  .nombreEmpresaTurismo .marcaTurismo {
+    font-size: 2rem;
   }
   .tituloTurismo h2 {
     font-size: 1.8rem;

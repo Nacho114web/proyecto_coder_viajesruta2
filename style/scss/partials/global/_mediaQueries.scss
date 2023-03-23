@@ -64,7 +64,7 @@
             "boton";
         grid-template-rows: 15% 12% auto 20% 10%;
 
-        h1 {
+        .marcaInicio {
             font-size: 3rem;
             text-align: center;
         }
@@ -115,14 +115,14 @@
 
 /* página conocenos */
 @media screen and (max-width:$breakpointMobile) {
-    .contenedorGridConocenos {
+    .mainPageConocenos {
         display: flex;
         flex-direction: column;
         padding-bottom: 5px;
     }
 
     .tituloPaginaConocenos {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         justify-self: center;
         margin: 0;
     }
@@ -152,8 +152,8 @@
 /* página Servicios */
 @media screen and (max-width:$breakpointMobile) {
     .nombreEmpresa {
-        h1 {
-            font-size: 2,2rem;
+        .marcaServicios {
+            font-size: 2rem;
         }
     }
 
@@ -166,7 +166,7 @@
 
 /* página Contacto */
 @media screen and (max-width:576px) {
-    .contenedorGridContacto {
+    .mainPageContacto {
         grid-template-areas:
             "nombreEmp"
             "datosContacto"
@@ -177,7 +177,7 @@
     }
 
     .nombreEmpresaContacto {
-        h1 {
+        .marcaContacto {
             font-size: 2rem;
         }
     }
@@ -220,8 +220,8 @@
 /* página Turismo */
 @media screen and (max-width:$breakpointMobile) {
     .nombreEmpresaTurismo {
-        h1 {
-            font-size: 2.2rem;
+        .marcaTurismo {
+            font-size: 2rem;
         }
     }
 

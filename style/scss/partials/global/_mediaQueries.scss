@@ -151,6 +151,10 @@
 
 /* página Servicios */
 @media screen and (max-width:$breakpointMobile) {
+    .mainPageServicios {
+        min-height: 150vh;
+    }
+
     .nombreEmpresa {
         .marcaServicios {
             font-size: 2rem;

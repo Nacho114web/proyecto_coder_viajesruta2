@@ -394,6 +394,7 @@ header {
 /* ---------------------ESTILOS PÁGINA SERVICIOS -------------------------------------------*/
 .mainPageServicios {
   background-color: rgb(198, 195, 195);
+  min-height: 120vh;
 }
 
 /*estilos para personalizar contenido de grilla Bootstrap*/
@@ -406,7 +407,7 @@ header {
   padding-top: 10px;
 }
 
-.cardServicios {
+.cardServicios .p-3 {
   box-shadow: 2px 13px 24px 2px rgba(5, 0, 0, 0.76);
   background-color: rgb(198, 195, 180);
   border-radius: 20px;
@@ -447,12 +448,12 @@ header {
   object-fit: cover;
 }
 
-.p-3 {
+.cardTurismo .p-3 {
   border-style: dashed;
   border-radius: 20px;
   padding-bottom: 10px;
 }
-.p-3 h3 {
+.cardTurismo h3 {
   padding-top: 5px;
 }
 
@@ -573,6 +574,9 @@ header {
 }
 /* página Servicios */
 @media screen and (max-width: 576px) {
+  .mainPageServicios {
+    min-height: 150vh;
+  }
   .nombreEmpresa .marcaServicios {
     font-size: 2rem;
   }

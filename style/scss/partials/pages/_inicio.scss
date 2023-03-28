@@ -57,16 +57,17 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   background-color: map-get($colores, colorFondoPrincipal);
 }
 
 .cardInfoEmpresa {
    display: flex;
    width: 33vw;
-   background-color: map-get($colores, colorFondoCards);
    flex-direction: column;
    flex-wrap: nowrap;
    justify-content: space-evenly;
    align-items: center;
+   margin:1%;
 
    h3 {
       font-size: 2rem;

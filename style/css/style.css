@@ -158,16 +158,17 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: rgb(198, 195, 195);
 }
 
 .cardInfoEmpresa {
   display: flex;
   width: 33vw;
-  background-color: rgb(128, 128, 128);
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
+  margin: 1%;
 }
 .cardInfoEmpresa h3 {
   font-size: 2rem;

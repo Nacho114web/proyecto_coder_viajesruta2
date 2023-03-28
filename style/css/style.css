@@ -21,6 +21,7 @@ body {
 header {
   position: sticky;
   top: 0px;
+  z-index: 5;
 }
 
 #barraNaveg {
@@ -446,12 +447,12 @@ header {
   object-fit: cover;
 }
 
-.cardTurismo {
+.p-3 {
   border-style: dashed;
   border-radius: 20px;
   padding-bottom: 10px;
 }
-.cardTurismo h3 {
+.p-3 h3 {
   padding-top: 5px;
 }
 

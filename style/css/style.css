@@ -82,7 +82,7 @@ header {
   background-color: rgb(0, 0, 0);
   height: 80px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -91,14 +91,12 @@ header {
   color: white;
   font-size: 0.8rem;
 }
-.piePagina ul {
-  color: white;
-}
 
 .redesSociales {
+  color: white;
   flex-grow: 2;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   list-style-type: none;
@@ -123,7 +121,7 @@ header {
 #portada {
   grid-area: portada;
   height: 90vh;
-  background-image: url(../../images/img_fondo_portada4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/img_fondo_portada4.jpg);
   background-size: cover;
   display: grid;
   grid-template-areas: "marca ." "slogan ." ". ." ". descrip" ". boton";
@@ -292,6 +290,7 @@ header {
 .parrafoForm {
   grid-area: tituloForm;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .form {
@@ -458,39 +457,31 @@ header {
 }
 
 /*------------------------------MEDIA QUERIES-------------------------------------------*/
-/*Mobile (576px para que coincida con md de Bootstrap */
-@media screen and (max-width: 576px) {
+/*Mobile (320px) */
+@media screen and (max-width: 320px) {
   /*----- Globales-----*/
   .logoEmpresa {
     height: 28px;
     width: 50px;
   }
   .piePagina {
-    height: 90px;
+    height: 110px;
     flex-flow: column nowrap;
   }
   .piePagina p {
-    align-self: flex-end;
-    color: white;
     font-size: 0.6rem;
     order: 3;
+    align-self: center;
   }
   .piePagina ul {
     color: white;
+    font-size: 0.8rem;
   }
   .piePagina .logoEmpresa {
     order: 1;
   }
   .redesSociales {
     order: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-  }
-  .redesSociales li {
-    padding: 0px 10px;
   }
   .iconRedes {
     height: 20px;
@@ -499,16 +490,20 @@ header {
   .iconoFijoChat {
     bottom: 59px;
   }
-  /*Pàgina Inicio*/
+}
+/*---- Página Inicio ----*/
+@media screen and (max-width: 320px) {
   #portada {
     height: 50vh;
     display: grid;
     grid-template-areas: "marca" "slogan" "." "descrip" "boton";
-    grid-template-rows: 15% 12% auto 20% 10%;
+    grid-template-rows: 10% 7% auto 20% 15%;
+    background-position: 35% 20%;
   }
   #portada .marcaInicio {
-    font-size: 3rem;
+    font-size: 2.3rem;
     text-align: center;
+    padding-top: 5px;
   }
   #portada h2 {
     font-size: 1.5rem;
@@ -519,9 +514,10 @@ header {
     align-self: center;
     justify-self: center;
     font-size: 1rem;
+    margin-bottom: 0px;
   }
   #portada .button {
-    align-self: self-start;
+    align-self: center;
     justify-self: center;
   }
   #infoEmpresa {
@@ -544,17 +540,16 @@ header {
     width: 90%;
   }
 }
-/* página conocenos */
-@media screen and (max-width: 576px) {
+/*---- Página Conocenos ---- */
+@media screen and (max-width: 320px) {
   .mainPageConocenos {
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
   }
   .tituloPaginaConocenos {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     justify-self: center;
-    margin: 0;
   }
   .laEmpresa {
     width: 90%;
@@ -572,31 +567,34 @@ header {
     justify-content: center;
   }
 }
-/* página Servicios */
-@media screen and (max-width: 576px) {
+/* ----Página Servicios ----*/
+@media screen and (max-width: 320px) {
   .mainPageServicios {
-    min-height: 150vh;
+    min-height: 200vh;
   }
   .nombreEmpresa .marcaServicios {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    padding-top: 5px;
   }
   .tituloServicios h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
-/* página Contacto */
-@media screen and (max-width: 576px) {
+/*---- Página Contacto ----*/
+@media screen and (max-width: 320px) {
   .mainPageContacto {
     grid-template-areas: "nombreEmp" "datosContacto" "mapa" "tituloForm " "formulario ";
-    row-gap: 5px;
+    row-gap: 30px;
   }
   .nombreEmpresaContacto .marcaContacto {
     font-size: 2rem;
+    padding-top: 5px;
   }
   .datosContactoEmpresa {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 10px;
   }
-  .parrafoForm p {
+  .parrafoForm {
     font-size: 1.2rem;
   }
   label {
@@ -605,6 +603,7 @@ header {
   .contenedorGridForm {
     width: 80vw;
     grid-template-areas: "nombre" "telef " "mail " "motivo " "pieform " "coment" "borrar" "enviar";
+    row-gap: 30px;
   }
   #comentario {
     width: 80vw;
@@ -613,8 +612,8 @@ header {
     width: 80vw;
   }
 }
-/* página Turismo */
-@media screen and (max-width: 576px) {
+/*---- Página Turismo ....*/
+@media screen and (max-width: 320px) {
   .nombreEmpresaTurismo .marcaTurismo {
     font-size: 2rem;
   }

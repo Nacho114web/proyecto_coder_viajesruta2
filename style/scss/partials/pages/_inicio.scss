@@ -11,8 +11,8 @@
 #portada {
    grid-area: portada;
    height: 90vh;
-   background-image: url(../../images/img_fondo_portada4.jpg);
-   background-size: cover;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/img_fondo_portada4.jpg);
+   background-size: cover;   
    display: grid;
    grid-template-areas:
       "marca ."
@@ -21,6 +21,7 @@
       ". descrip"
       ". boton";
    grid-template-rows: 20% 10% auto 20% 10%;
+   
 
    .marcaInicio {
       @extend %marca;

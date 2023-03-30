@@ -81,7 +81,7 @@ header {
    background-color: map-get($colores, colorFondoFooter);
    height: 80px;
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: row wrap;
    justify-content: space-between;
    align-items: center;
      
@@ -89,17 +89,15 @@ header {
    align-self: flex-end;
    color: white;
    font-size: 0.8rem;
-        }
-   
-        ul {
-   color: white;
-        }
+        }  
+        
 }
 
 .redesSociales {
+   color: white;
    flex-grow: 2;
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: row wrap;
    justify-content: center;
    align-items: center;
    list-style-type: none;

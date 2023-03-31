@@ -1,7 +1,8 @@
 /* ---------------------ESTILOS PÁGINA SERVICIOS -------------------------------------------*/
 .mainPageServicios {
    background-color: map-get($colores, colorFondoPrincipal);
-   min-height: 120vh;
+   padding-bottom: 20px;
+   min-height:100vh;
 }
 
 /*estilos para personalizar contenido de grilla Bootstrap*/

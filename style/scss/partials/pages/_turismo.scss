@@ -1,5 +1,5 @@
 /* ---------------------ESTILOS PÁGINA TURISMO -------------------------------------------*/
-.mainPageTurismo {
+.mainPageTurismo {   
    padding-bottom: 20px;
    background-color: map-get($colores, colorFondoPrincipal);
 }
@@ -22,11 +22,11 @@
 }
 
 .imagenTurismo {
+   align-self: center;
 
    img {
       width: 98%;
       height: 98%;
-      object-fit: cover;
    }
 }
 
@@ -36,9 +36,21 @@
       border-style: dashed, ;
       border-radius: 20px;
       padding-bottom: 10px;
+      min-height: 100%;
    }
 
    h3 {
       padding-top: 5px;
    }
+}
+#imagenRelleno{
+   
+   .p-3{
+      border-style: none;
+   }
+   img{
+      width: 100%;
+      
+   }
+   
 }

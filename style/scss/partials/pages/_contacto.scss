@@ -1,5 +1,6 @@
 /* ---------------------ESTILOS PÁGINA CONTACTO -------------------------------------------*/
 .mainPageContacto {
+   min-height: 100vh;
    background-color: map-get($colores, colorFondoPrincipal);
    display: grid;
    grid-template-areas:
@@ -22,7 +23,7 @@
 
 .datosContactoEmpresa {
    grid-area: datosContacto;
-   font-size: 1.6rem;
+   font-size: 1.2rem;
 
    h3:hover {
       background-color: map-get($colores, colorFondoHeader);

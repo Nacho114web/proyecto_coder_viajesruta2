@@ -16,12 +16,13 @@
 .tituloServicios {
 
    h2 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       padding-top: 10px;
    }
 }
 
 .cardServicios {
+  
    .p-3 {
       @include sombreadoCards;
       padding-bottom: 10px;

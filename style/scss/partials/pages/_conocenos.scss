@@ -22,6 +22,13 @@
 }
 
 .laEmpresa {
+
+    p:nth-child(2) {
+        font-size: 1.2rem;
+        border-style: solid;
+        border-width: thin;
+        text-align: center;
+    }
     width: 90%;
     justify-self: center;
     align-self: center;
@@ -36,6 +43,7 @@
     width: 90%;
     padding: 5px;
     @include sombreadoCards;
+    min-height: fit-content;
     font-size: 0.9rem;
     margin: 20px;
 }

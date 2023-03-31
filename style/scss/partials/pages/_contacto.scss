@@ -65,6 +65,11 @@
    row-gap: 10px;
 }
 
+input,textarea {
+   border-radius: 5px;
+   border-style: none;
+}
+
 .formNombre {
    grid-area: nombre;
 
@@ -97,6 +102,7 @@
    input {
       background-color: lightgrey;
       transition: all 1s;
+      
 
       &:focus {
          background-color: whitesmoke;
@@ -152,9 +158,18 @@
 .formBorrar {
    grid-area: borrar;
    justify-self: center;
+   color: black;
+
+   .button{
+      color: black;
+   }
 }
 
 .formEnviar {
    grid-area: enviar;
-   justify-self: center;
+   justify-self: center; 
+   
+   .button {
+      color: black;
+   }
 }

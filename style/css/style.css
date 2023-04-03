@@ -126,7 +126,7 @@ header {
   display: grid;
   grid-template-areas: "marca ." "slogan ." ". ." ". descrip" ". boton";
   grid-template-rows: 20% 10% auto 20% 10%;
-  grid-template-columns: 60% auto;
+  grid-template-columns: 70% auto;
 }
 #portada .marcaInicio {
   font-size: 6rem;
@@ -143,7 +143,7 @@ header {
   font-size: 1.1rem;
   text-align: justify;
   grid-area: descrip;
-  width: 30vw;
+  width: 25vw;
   align-self: center;
   justify-self: center;
 }
@@ -264,6 +264,10 @@ header {
 
 .fotoCuatro {
   grid-area: foto4;
+}
+
+.piePagina {
+  min-height: 15vh;
 }
 
 /* ---------------------ESTILOS PÁGINA CONTACTO -------------------------------------------*/
@@ -493,7 +497,7 @@ input, textarea {
 /*------------------------------MEDIA QUERIES-------------------------------------------*/
 /*------------------------------Tablet-----768px----------------------------------------*/
 /*----- Globales-----*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .logoEmpresa {
     height: 28px;
     width: 50px;
@@ -526,7 +530,7 @@ input, textarea {
   }
 }
 /*---- Página Inicio ----*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #portada {
     height: 70vh;
     grid-template-rows: 15% 5% auto auto 10%;
@@ -571,7 +575,7 @@ input, textarea {
   }
 }
 /*---- Página Conocenos ---- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .mainPageConocenos {
     display: flex;
     flex-direction: column;
@@ -598,7 +602,7 @@ input, textarea {
   }
 }
 /*---- Página Servicios ----*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .mainPageServicios {
     min-height: 100%;
   }
@@ -612,7 +616,7 @@ input, textarea {
   }
 }
 /*---- Página Contacto ----*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .mainPageContacto {
     grid-template-areas: "nombreEmp" "datosContacto" "mapa" "tituloForm " "formulario ";
   }
@@ -639,7 +643,7 @@ input, textarea {
   }
 }
 /*---- Página Turismo ----*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nombreEmpresaTurismo .marcaTurismo {
     font-size: 2.8rem;
     padding-top: 15px;
@@ -651,7 +655,7 @@ input, textarea {
 }
 /*--------------------------------Mobile-----320px*/
 /*---- Página Inicio ----*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   #portada {
     height: 50vh;
     display: grid;
@@ -678,13 +682,13 @@ input, textarea {
   }
 }
 /*---- Página Conocenos ---- */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .tituloPaginaConocenos {
     font-size: 2.3rem;
   }
 }
 /* ----Página Servicios ----*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .mainPageServicios {
     min-height: 200vh;
   }
@@ -697,7 +701,7 @@ input, textarea {
   }
 }
 /*---- Página Contacto ----*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .mainPageContacto {
     row-gap: 30px;
   }
@@ -726,7 +730,7 @@ input, textarea {
   }
 }
 /*---- Página Turismo ....*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .nombreEmpresaTurismo .marcaTurismo {
     font-size: 2rem;
   }

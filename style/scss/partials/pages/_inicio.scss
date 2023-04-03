@@ -21,7 +21,7 @@
       ". descrip"
       ". boton";
    grid-template-rows: 20% 10% auto 20% 10%;
-   grid-template-columns: 60% auto;
+   grid-template-columns: 70% auto;
    
 
    .marcaInicio {
@@ -42,7 +42,7 @@
       font-size: 1.1rem;
       text-align: justify;
       grid-area: descrip;
-      width: 30vw;
+      width:25vw;
       align-self: center;
       justify-self: center;
    }

@@ -127,6 +127,7 @@ header {
   grid-template-areas: "marca ." "slogan ." ". ." ". descrip" ". boton";
   grid-template-rows: 20% 10% auto 20% 10%;
   grid-template-columns: 70% auto;
+  row-gap: 10px;
 }
 #portada .marcaInicio {
   font-size: 6rem;
